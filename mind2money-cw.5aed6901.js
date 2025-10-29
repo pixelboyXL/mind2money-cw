@@ -1,0 +1,2 @@
+const e=document.querySelector(".link-about-project"),o=document.querySelector(".link-reviews"),t=document.querySelector(".link-faq"),r=document.querySelector(".about-project"),c=document.querySelector(".reviews"),l=document.querySelector(".faq");window.addEventListener("click",function(n){let{target:i}=n;i===e&&r.scrollIntoView({block:"start",behavior:"smooth"}),i===o&&c.scrollIntoView({block:"start",behavior:"smooth"}),i===t&&l.scrollIntoView({block:"start",behavior:"smooth"})});
+//# sourceMappingURL=mind2money-cw.5aed6901.js.map
