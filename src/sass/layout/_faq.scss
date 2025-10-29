@@ -1,0 +1,112 @@
+.faq .container{
+    padding-left: 336px;
+    padding-top: 72px;
+    padding-right: 336px;
+    padding-bottom: 124px;
+}
+
+.faq__title-wrap {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.faq__title {
+    font-size: 60px;
+    line-height: calc(40 / 60);
+    text-align: center;
+    color: var(--mind2money-grey);
+    display: inline-block;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 37px;
+        background-image: url(../images/mind2money_logo_smaller.svg);
+        position: absolute;
+        right: -25px;
+        top: -24px;
+    }
+}
+
+.faq__after-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    color: var(--mind2money-dark-grey);
+    margin-bottom: 48px;
+}
+
+.faq__item {
+    padding: 16px 25px;
+    border-radius: 10px;
+    border: 1px solid var(--mind2money-border);
+    background-color: var(--mind2money-rgba-background);
+}
+
+.faq__item + .faq__item {
+    margin-top: 16px;
+}
+
+.faq__item-title-wrap {
+    @include flex_align;
+    justify-content: space-between;
+}
+
+.faq__item-title {
+    font-size: 13.8px;
+    line-height: calc(20 / 13.8);
+    color: var(--clearly-white);
+}
+
+.faq__item-arrow {
+    cursor: pointer;
+}
+
+.faq__item-text {
+    font-weight: 400;
+    font-size: 13.6px;
+    line-height: calc(20 / 13.6);
+    color: var(--mind2money-dark-grey);
+    margin-top: 16px;
+}
+
+.contact-support__wrap {
+    padding: 25px;
+    margin-top: 48px;
+    border-radius: 10px;
+    border: 1px solid var(--mind2money-border);
+    background-color: var(--mind2money-contact-support-rgba-background);
+}
+
+.contact-support__title {
+    font-size: 17px;
+    line-height: calc(27 / 17);
+    text-align: center;
+    color: var(--clearly-white);
+    margin-bottom: 8px;
+}
+
+.contact-support__after-title {
+    font-weight: 400;
+    font-size: 15.3px;
+    line-height: calc(24 / 15.3);
+    text-align: center;
+    color: var(--mind2money-dark-grey);
+    margin-bottom: 16px;
+}
+
+.contact-support__btn {
+    font-weight: 500;
+    font-size: 15.5px;
+    line-height: calc(24 / 15.5);
+    color: var(--mind2money-dark);
+    width: 149px;
+    display: block;
+    padding: 8px 24px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--mind2money-yellow);
+    @include scale_with_pointer;
+}

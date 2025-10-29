@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 72px;
+    margin: 0 auto;
+}
+
+.header .container {
+    @include flex_align;
+    justify-content: space-between;
+    padding-top: 17.13px;
+    padding-bottom: 15px;
+}
+
+.logo {
+	@include flex_align;
+}
+
+.logo-image {
+	margin-right: 13px;
+}
+
+.nav,
+.nav__list {
+    @include flex_align;
+}
+
+.nav__item + .nav__item,
+.nav__btn {
+    margin-left: 34.5px;
+}
+
+.nav__item:first-child {
+    width: 100px;
+}
+
+.nav__link {
+    font-size: 15px;
+    line-height: calc(20 / 15);
+    text-transform: uppercase;
+    color: var(--mind2money-grey);
+    @include change_to_white_with_pointer;
+}
+
+.nav__btn {
+    @include scale_with_pointer;
+}

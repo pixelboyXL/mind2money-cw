@@ -1,0 +1,67 @@
+.about-project .container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--mind2money-another-dark);
+}
+
+.about-project__title-wrap {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.about-project__title,
+.reviews__title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: calc(70 / 60);
+    text-transform: uppercase;
+    color: var(--mind2money-grey);
+    display: inline-block;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 37px;
+        background-image: url(../images/mind2money_logo_smaller.svg);
+        position: absolute;
+        right: -20px;
+        top: -12px;
+    }
+}
+
+.about-project__main-wrap {
+    display: flex;
+}
+
+.about-project__image {
+    width: 377px;
+    margin-right: 65px;
+}
+
+.about-project__text {
+    font-size: 30px;
+    line-height: calc(42 / 30);
+    color: var(--mind2money-grey);
+    margin-bottom: 60px;
+}
+
+.about-project__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-project__number {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: calc(50 / 50);
+    color: var(--mind2money-yellow);
+    margin-bottom: 2.75px;
+}
+
+.about-project__meaning {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: var(--mind2money-yellow);
+}

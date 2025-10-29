@@ -1,0 +1,24 @@
+@mixin flex_align {
+    display: flex;
+    align-items: center;
+}
+
+@mixin change_to_white_with_pointer {
+    @include transition_with_cubic;
+    &:hover {
+        cursor: pointer;
+        color: var(--clearly-white);
+    }
+}
+
+@mixin scale_with_pointer {
+    @include transition_with_cubic;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+
+@mixin transition_with_cubic($time:250ms) {
+    transition: all $time cubic-bezier(0.4, 0, 0.2, 1);
+}

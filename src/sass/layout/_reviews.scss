@@ -1,0 +1,46 @@
+.reviews .container{
+    padding-top: 89px;
+    padding-bottom: 84px;
+    background-color: var(--mind2money-dark);
+}
+
+.reviews__title-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reviews__list-wrap {
+    padding-left: 21px;
+    padding-top: 38px;
+    padding-right: 21px;
+    padding-bottom: 21px;
+    border-radius: 16px;
+    border: 1px solid var(--mind2money-step-list-rgba-border);
+    background-color: var(--mind2money-another-dark);
+}
+
+.reviews__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--mind2money-grey);
+    width: 806px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.reviews__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.reviews__item {
+    @include scale_with_pointer;
+}
+
+.reviews__image {
+    max-width: 268px;
+}

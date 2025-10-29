@@ -1,0 +1,58 @@
+.subscription .container {
+    padding-bottom: 20px;
+}
+
+.subscription__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: calc(60 / 50);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--mind2money-grey);
+    width: 697px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+}
+
+.subscription__title-yellow {
+    font-weight: 300;
+    font-style: Italic;
+    font-size: 50px;
+    line-height: calc(60 / 50);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--mind2money-yellow);
+}
+
+.subscription__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    text-align: center;
+    color: var(--mind2money-grey);
+    width: 522px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 44px;
+}
+
+.subscription__link {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: calc(20 / 19);
+    color: var(--mind2money-another-dark);
+    width: 236px;
+    @include flex_align;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 21px 35px;
+    border-radius: 15px;
+    border: 1px solid var(--mind2money-rgba-border);
+    background-color: var(--mind2money-yellow);
+    @include scale_with_pointer;
+}
+
+.subscription__btn-image {
+    margin-left: 11px;
+}

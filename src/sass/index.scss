@@ -1,2 +1,10 @@
-@import './common';
-@import './example';
+@import "./utils/root&reset";
+@import "./utils/mixin";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/steps-list";
+@import "./layout/about-project";
+@import "./layout/reviews";
+@import "./layout/subscription";
+@import "./layout/faq";
+@import "./layout/footer";
