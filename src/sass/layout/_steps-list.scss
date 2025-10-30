@@ -21,22 +21,27 @@
     border: 1px solid var(--mind2money-step-list-rgba-border);
     background-color: var(--mind2money-another-dark);
     @include scale_with_pointer;
-    &:nth-child(2n) {
+    &:nth-child(2) {
         padding-right: 45px;
+        padding-bottom: 33px;
+        .steps-list__number {
+            margin-bottom: 53px;
+        }
+        .steps-list__title {
+            margin-bottom: 5px;
+        }
     }
-    &:nth-child(3n) {
+    &:nth-child(3) {
         padding-right: 24px;
+        padding-bottom: 33px;
     }
-    &:nth-child(4n) {
+    &:nth-child(4) {
         padding-right: 61px;
     }
 }
 
 .item-bigger {
     width: 854px;
-    .steps-list__number {
-        margin-bottom: 80px;
-    }
 }
 
 .steps-list__number {
@@ -45,7 +50,7 @@
     color: var(--mind2money-another-dark);
     display: inline-block;
     padding: 5px 11px;
-    margin-bottom: 53px;
+    margin-bottom: 80px;
     border-radius: 6px;
     background-color: var(--mind2money-yellow);
 }
