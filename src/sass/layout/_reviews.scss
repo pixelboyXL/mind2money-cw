@@ -1,44 +1,73 @@
-.reviews .container{
-    padding-top: 89px;
-    padding-bottom: 84px;
+.reviews .container {
+    padding-top: 49px;
+    padding-bottom: 47px;
     background-color: var(--mind2money-dark);
+    @include desk {
+        padding-top: 89px;
+        padding-bottom: 84px;
+    }
 }
 
 .reviews__title-wrap {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    @include desk {
+        margin-bottom: 50px;
+    }
 }
 
 .reviews__list-wrap {
-    padding-left: 21px;
-    padding-top: 38px;
-    padding-right: 21px;
-    padding-bottom: 21px;
+    padding-left: 11px;
+    padding-top: 19px;
+    padding-right: 11px;
+    padding-bottom: 11px;
     border-radius: 16px;
     border: 1px solid var(--mind2money-step-list-rgba-border);
     background-color: var(--mind2money-another-dark);
+    @include desk {
+        padding-left: 21px;
+        padding-top: 38px;
+        padding-right: 21px;
+        padding-bottom: 21px;
+    }
 }
 
 .reviews__text {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: calc(30 / 18);
     text-align: center;
     color: var(--mind2money-grey);
-    width: 806px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    @include desk {
+        font-size: 24px;
+        line-height: calc(30 / 24);
+        width: 806px;
+        margin-bottom: 40px;
+    }
 }
 
 .reviews__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    @include desk {
+        justify-content: start;
+        gap: 10px;
+    }
 }
 
 .reviews__item {
     @include scale_with_pointer;
+}
+
+.reviews__item + .reviews__item {
+    margin-top: 20px;
+    @include desk {
+        margin-top: 0;
+    }
 }
 
 .reviews__image {

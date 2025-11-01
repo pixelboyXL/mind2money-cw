@@ -3,6 +3,18 @@
     align-items: center;
 }
 
+@mixin desk {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin mob {
+    @media screen and (min-width: 391px) {
+        @content;
+    }
+}
+
 @mixin change_to_white_with_pointer {
     @include transition_with_cubic;
     &:hover {

@@ -1,9 +1,13 @@
-.hero .container{
-    display: flex;
-    padding-left: 130px;
-    padding-top: 94px;
-    padding-bottom: 47px;
+.hero .container {
+    padding-top: 47px;
+    padding-bottom: 23px;
     background: url(../images/mind2money_hero_overlay.png), radial-gradient(95.68% 95.68% at 92.47% 4.32%, #BEBEBE 0%, #000000 100%);
+    @include desk {
+        padding-top: 94px;
+        padding-bottom: 47px;
+        display: flex;
+        padding-left: 130px;
+    }
 }
 
 .hero__image {
@@ -11,66 +15,100 @@
 }
 
 .hero__main-wrap {
-    margin-left: 60px;
-    margin-top: 53px;
+    margin-top: 26px;
+    @include desk {
+        margin-left: 60px;
+        margin-top: 53px;
+    }
 }
 
 .hero__title {
     font-family: Damn, sans-serif;
     font-weight: 400;
-    font-size: 150px;
-    line-height: calc(156 / 150);
+    font-size: 97px;
+    line-height: calc(100 / 97);
     text-transform: uppercase;
     color: var(--mind2money-grey);
+    @include desk {
+        font-size: 150px;
+        line-height: calc(156 / 150);
+    }
 }
 
 .hero__after-title {
     font-weight: 400;
     font-size: 20px;
     line-height: calc(28 / 20);
+    text-align: center;
     color: var(--mind2money-grey);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    @include desk {
+        text-align: right;
+        margin-bottom: 40px;
+    }
 }
 
 .hero__timer-wrap {
     @include flex_align;
-    width: 447px;
-    padding-left: 35px;
-    margin-bottom: 40px;
+    padding-left: 17px;
+    margin-bottom: 20px;
     border-radius: 15px;
     border: 1px solid var(--mind2money-yellow);
+    @include desk {
+        width: 447px;
+        padding-left: 35px;
+        margin-bottom: 40px;
+    }
 }
 
 .hero__timer-text {
     font-family: IBM Plex Mono, sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    line-height: calc(27 / 20);
+    font-size: 15px;
+    line-height: calc(27 / 15);
     text-transform: uppercase;
     color: var(--clearly-white);
-    margin-right: 15px;
+    margin-right: 7px;
+    @include desk {
+        font-size: 20px;
+        line-height: calc(27 / 20);
+        margin-right: 15px;
+    }
 }
 
 .hero__timer {
     font-family: Dharma-Gothic-E, sans-serif;
-    font-size: 57px;
-    line-height: calc(57 / 57);
+    font-size: 45px;
+    line-height: calc(57 / 45);
     text-transform: uppercase;
     color: var(--mind2money-dark);
-    min-width: 172px;
-    padding: 19px 25px;
+    min-width: 135px;
+    padding: 12px 18px;
     border-radius: 12px;
     background-color: var(--mind2money-yellow);
+    @include desk {
+        font-size: 57px;
+        line-height: calc(57 / 57);
+        min-width: 172px;
+        padding: 19px 25px;
+    }
 }
 
 .hero__link {
     font-size: 21px;
     line-height: calc(20 / 21);
     color: var(--mind2money-another-dark);
-    display: inline-block;
-    padding: 21px 35px;
+    text-align: center;
+    width: 207px;
+    display: block;
+    padding: 16px 28px;
+    margin: 0 auto;
     border-radius: 15px;
     border: 1px solid var(--mind2money-rgba-border);
     background-color: var(--mind2money-yellow);
     @include scale_with_pointer;
+    @include desk {
+        padding: 21px 35px;
+        margin: 0;
+    }
 }

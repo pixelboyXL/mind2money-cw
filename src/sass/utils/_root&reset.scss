@@ -12,6 +12,7 @@
 	--mind2money-border: #262626;
 	--mind2money-rgba-background: #0A0A0A80;
 	--mind2money-contact-support-rgba-background: #0A0A0A4D;
+    --mind2money-mob-background: #000000a1;
 }
 
 @font-face {
@@ -82,4 +83,10 @@ body {
         border-radius: 4px;
 		background-color: var(--mind2money-grey);
 	}
+}
+
+.is_hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
 }

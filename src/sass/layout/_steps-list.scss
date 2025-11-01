@@ -1,31 +1,51 @@
 .steps-list .container {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 25px;
+    padding-bottom: 35px;
     background-color: var(--mind2money-dark);
     background-image: url(../images/mind2money_steps_list_background.jpg);
     background-repeat: no-repeat;
-    background-position: right 0% top 100%;
+    background-position: right 0% top 50%;
     background-size: auto;
+    @include desk {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        background-position: right 0% top 100%;
+    }
 }
 
 .steps-list__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include desk {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .steps-list__item {
-    width: 412px;
-    padding: 61px 41px;
+    max-width: 412px;
+    padding: 31px 21px;
     border-radius: 20px;
     border: 1px solid var(--mind2money-step-list-rgba-border);
     background-color: var(--mind2money-another-dark);
     @include scale_with_pointer;
+    @include desk {
+        max-width: 100%;
+        width: 412px;
+        height: 374px;
+        padding: 61px 41px;
+    }
     &:nth-child(2) {
-        padding-right: 45px;
-        padding-bottom: 33px;
+        padding-right: 22px;
+        padding-bottom: 16px;
+        @include desk {
+            padding-right: 45px;
+            padding-bottom: 33px;
+        }
         .steps-list__number {
-            margin-bottom: 53px;
+            margin-bottom: 26px;
+            @include desk {
+                margin-bottom: 53px;
+            }
         }
         .steps-list__title {
             margin-bottom: 5px;
@@ -33,39 +53,65 @@
     }
     &:nth-child(3) {
         padding-right: 24px;
-        padding-bottom: 33px;
+        padding-bottom: 16px;
+        @include desk {
+            padding-bottom: 33px;
+        }
     }
     &:nth-child(4) {
         padding-right: 61px;
     }
 }
 
+.steps-list__item + .steps-list__item {
+    margin-top: 20px;
+    @include desk {
+        margin-top: 0;
+    }
+}
+
 .item-bigger {
-    width: 854px;
+    @include desk {
+        width: 854px;
+    }
 }
 
 .steps-list__number {
-    font-size: 30px;
-    line-height: calc(42 / 30);
+    font-size: 25px;
+    line-height: calc(42 / 25);
     color: var(--mind2money-another-dark);
     display: inline-block;
     padding: 5px 11px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     border-radius: 6px;
     background-color: var(--mind2money-yellow);
+    @include desk {
+        font-size: 30px;
+        line-height: calc(42 / 30);
+        margin-bottom: 80px;
+    }
 }
 
 .steps-list__title {
-    font-size: 40px;
-    line-height: calc(44 / 40);
+    font-size: 30px;
+    line-height: calc(44 / 30);
     text-transform: uppercase;
     color: var(--mind2money-grey);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    @include desk {
+        font-size: 40px;
+        line-height: calc(44 / 40);
+        margin-bottom: 20px;
+    }
 }
 
 .steps-list__after-title {
     font-weight: 400;
-    font-size: 16px;
-    line-height: calc(28 / 16);
+    font-size: 14px;
+    line-height: calc(28 / 14);
     color: var(--mind2money-grey);
+    @include desk {
+        font-size: 16px;
+        line-height: calc(28 / 16);
+    }
 }

@@ -1,8 +1,12 @@
 .container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 72px;
+    max-width: 391px;
+    padding: 0 20px;
     margin: 0 auto;
+    @include desk {
+        max-width: 1440px;
+        padding: 0 72px;
+    }
 }
 
 .header .container {
@@ -20,9 +24,15 @@
 	margin-right: 13px;
 }
 
-.nav,
-.nav__list {
+.nav {
     @include flex_align;
+}
+
+.nav__list {
+    display: none;
+    @include desk {
+        @include flex_align;
+    }
 }
 
 .nav__item + .nav__item,
@@ -43,5 +53,18 @@
 }
 
 .nav__btn {
-    @include scale_with_pointer;
+    display: none;
+    @include desk {
+        display: block;
+        @include scale_with_pointer;
+    }
+}
+
+.nav__btn-mob-menu-open {
+    width: 24px;
+    height: 16px;
+    background-image: url(../images/mind2money_mob_menu_open.svg);
+    @include desk {
+        display: none;
+    }
 }

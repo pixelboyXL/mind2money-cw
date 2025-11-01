@@ -28,6 +28,7 @@
                     </svg>
                 </a>
             </button>
+            <button type="button" class="nav__btn-mob-menu-open"></button>
         </nav>
     </div>
 </header>
@@ -162,7 +163,7 @@
                     <div class="faq__item-title-wrap">
                         <p class="faq__item-title">Что такое P2P-арбитраж и как на этом зарабатывать?</p>
                         <svg width="16" height="16" class="faq__item-arrow">
-                            <use href="./images/mind2money_faq_arrow_up.svg"></use>
+                            <use href="./images/mind2money_faq_arrow.svg"></use>
                         </svg>
                     </div>
                     <p class="faq__item-text">P2P — это торговля криптой между людьми напрямую. Мы зарабатываем на разнице курсов между площадками. В Telegram-канале объясняем стратегию простыми словами и показываем реальные кейсы.</p>
@@ -174,6 +175,7 @@
                             <use href="./images/mind2money_faq_arrow.svg"></use>
                         </svg>
                     </div>
+                    <p class="faq__item-text">Нет! Канал создан для новичков. Все инструкции — пошагово: от регистрации до первой прибыли.</p>
                 </li>
                 <li class="faq__item">
                     <div class="faq__item-title-wrap">
@@ -182,6 +184,7 @@
                             <use href="./images/mind2money_faq_arrow.svg"></use>
                         </svg>
                     </div>
+                    <p class="faq__item-text">В среднем +3–5% за одну торговую сессию. Итог — зависит от суммы, активности и дисциплины. В Telegram мы делимся реальными результатами и рабочими схемами.</p>
                 </li>
                 <li class="faq__item">
                     <div class="faq__item-title-wrap">
@@ -190,6 +193,7 @@
                             <use href="./images/mind2money_faq_arrow.svg"></use>
                         </svg>
                     </div>
+                    <p class="faq__item-text">Любые инвестиции имеют риски. Мы обучаем только безопасным стратегиям и показываем, как их минимизировать. Вся аналитика — бесплатно в канале.</p>
                 </li>
                 <li class="faq__item">
                     <div class="faq__item-title-wrap">
@@ -198,6 +202,7 @@
                             <use href="./images/mind2money_faq_arrow.svg"></use>
                         </svg>
                     </div>
+                    <p class="faq__item-text">Бесплатное обучение с нуля, доступ к проверенным стратегиям, инструменты и чек-листы, конкурсные раздачи и активности, закрытое комьюнити с поддержкой</p>
                 </li>
                 <li class="faq__item">
                     <div class="faq__item-title-wrap">
@@ -206,6 +211,7 @@
                             <use href="./images/mind2money_faq_arrow.svg"></use>
                         </svg>
                     </div>
+                    <p class="faq__item-text">Нет, можно начать с небольшой суммы. В канале показываем примеры даже с $100–200.</p>
                 </li>
                 <li class="faq__item">
                     <div class="faq__item-title-wrap">
@@ -214,6 +220,7 @@
                             <use href="./images/mind2money_faq_arrow.svg"></use>
                         </svg>
                     </div>
+                    <p class="faq__item-text">От 30 минут в день. Многие совмещают с учебой или основной работой.</p>
                 </li>
                 <li class="faq__item">
                     <div class="faq__item-title-wrap">
@@ -222,6 +229,7 @@
                             <use href="./images/mind2money_faq_arrow.svg"></use>
                         </svg>
                     </div>
+                    <p class="faq__item-text">Подпишитесь на наш Telegram — там первые инструкции для старта и разборы площадок.</p>
                 </li>
             </ul>
             <div class="contact-support__wrap">
@@ -240,5 +248,27 @@
         <p class="footer__text">Mind2Money © 2025 | Все права защищены</p>
     </div>
 </footer>
-<script src="./js/smooth_scroll.js" type="module"></script>
-<script src="./js/timer.js" type="module"></script>
+<div class="mob-menu__backdrop is_hidden">
+    <div class="mob-menu">
+        <button type="button" class="nav__btn-mob-menu-close"></button>
+        <ul class="nav__list-mob">
+            <li class="nav__item-mob">
+                <p class="nav__link-mob link-about-project-mob">О проекте</p>
+            </li>
+            <li class="nav__item-mob">
+                <p class="nav__link-mob link-reviews-mob">Отзывы</p>
+            </li>
+            <li class="nav__item-mob">
+                <p class="nav__link-mob link-faq-mob" lang="en">FAQ</p>
+            </li>
+        </ul>
+        <button type="button" class="nav__btn-mob">
+            <a href="https://web.telegram.org/k/" target="_blank"
+                rel="noopener noreferrer nofollow">
+                <svg width="39" height="40">
+                    <use href="./images/telegram.svg"></use>
+                </svg>
+            </a>
+        </button>
+    </div>
+</div>

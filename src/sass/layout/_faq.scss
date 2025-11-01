@@ -1,8 +1,12 @@
-.faq .container{
-    padding-left: 336px;
-    padding-top: 72px;
-    padding-right: 336px;
-    padding-bottom: 124px;
+.faq .container {
+    padding-top: 36px;
+    padding-bottom: 62px;
+    @include desk {
+        padding-top: 72px;
+        padding-bottom: 124px;
+        padding-left: 336px;
+        padding-right: 336px;
+    }
 }
 
 .faq__title-wrap {
@@ -11,12 +15,16 @@
 }
 
 .faq__title {
-    font-size: 60px;
-    line-height: calc(40 / 60);
+    font-size: 50px;
+    line-height: calc(40 / 50);
     text-align: center;
     color: var(--mind2money-grey);
     display: inline-block;
     position: relative;
+    @include desk {
+        font-size: 60px;
+        line-height: calc(40 / 60);
+    }
     &::after {
         content: "";
         display: block;
@@ -31,14 +39,20 @@
 
 .faq__after-title {
     font-weight: 400;
-    font-size: 20px;
-    line-height: calc(24 / 20);
+    font-size: 15px;
+    line-height: calc(24 / 15);
     text-align: center;
     color: var(--mind2money-dark-grey);
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+    @include desk {
+        font-size: 20px;
+        line-height: calc(24 / 20);
+        margin-bottom: 48px;
+    }
 }
 
 .faq__item {
+    overflow: hidden;
     padding: 16px 25px;
     border-radius: 10px;
     border: 1px solid var(--mind2money-border);
@@ -47,6 +61,11 @@
 
 .faq__item + .faq__item {
     margin-top: 16px;
+}
+
+.item-open .faq__item-text {
+    max-height: 999px;
+    padding-top: 15px;
 }
 
 .faq__item-title-wrap {
@@ -62,6 +81,11 @@
 
 .faq__item-arrow {
     cursor: pointer;
+    @include transition_with_cubic(500ms);
+}
+
+.arrow-up {
+    transform: rotateZ(-180deg);
 }
 
 .faq__item-text {
@@ -69,15 +93,21 @@
     font-size: 13.6px;
     line-height: calc(20 / 13.6);
     color: var(--mind2money-dark-grey);
-    margin-top: 16px;
+    max-height: 0;
+    padding-top: 0;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
 }
 
 .contact-support__wrap {
     padding: 25px;
-    margin-top: 48px;
+    margin-top: 24px;
     border-radius: 10px;
     border: 1px solid var(--mind2money-border);
     background-color: var(--mind2money-contact-support-rgba-background);
+    @include desk {
+        margin-top: 48px;
+    }
 }
 
 .contact-support__title {

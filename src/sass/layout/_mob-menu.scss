@@ -1,0 +1,90 @@
+.mob-menu__backdrop {
+    position: fixed;
+	left: 50%;
+	top: 50%;
+    z-index: 1;
+	width: 100%;
+    max-width: 391px;
+	height: 100vh;
+    transform: translate(-50%, -50%);
+    @include transition_with_cubic;
+	background-color: var(--mind2money-mob-background);
+}
+
+.mob-menu {
+    position: absolute;
+    right: calc(-90%);
+    opacity: 0;
+    width: 75%;
+    height: 100%;
+    padding: 48px;
+    background-color: var(--mind2money-another-dark);
+    @include transition_with_cubic(500ms);
+}
+
+.mob-menu-visible {
+    right: 0;
+    opacity: 1;
+}
+
+.nav__btn-mob-menu-open {
+    width: 24px;
+    height: 16px;
+    background-image: url(../images/mind2money_mob_menu_open.svg);
+    @include desk {
+        display: none;
+    }
+}
+
+.nav__list-mob {
+    @include desk {
+        display: none;
+    }
+}
+
+.nav__btn-mob-menu-close {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-image: url(../images/mind2money_mob_menu_close.svg);
+}
+
+.nav__item-mob {
+    border-bottom: 1px solid var(--mind2money-dark-grey);
+}
+
+.nav__item-mob + .nav__item-mob {
+    margin-top: 34.5px;
+}
+
+.nav__link-mob {
+    font-size: 25px;
+    line-height: calc(40 / 25);
+    text-transform: uppercase;
+    color: var(--mind2money-grey);
+    width: max-content;
+    position: relative;
+    @include change_to_white_with_pointer;
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 37px;
+        background-image: url(../images/mind2money_logo_smaller.svg);
+        position: absolute;
+        top: -15px;
+        right: -20px;
+    }
+}
+
+.nav__btn-mob {
+    margin-top: 36px;
+    @include scale_with_pointer;
+    @include desk {
+        display: none;
+    }
+}
