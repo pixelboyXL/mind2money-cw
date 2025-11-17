@@ -3,7 +3,7 @@ import { linkAboutProject,
     linkFaq,
     aboutboutProjectSection,
     reviewsSection,
-    faqSection, } from './refs';
+    faqSection, } from './refs.js';
 
 window.addEventListener('click', handleButtonClick);
 

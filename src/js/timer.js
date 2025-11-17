@@ -1,4 +1,4 @@
-import { countdownEl } from "./refs";
+import { countdownEl } from "./refs.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     const initialDurationHours = 5; 

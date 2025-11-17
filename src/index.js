@@ -1,5 +1,5 @@
-import "./js/refs";
-import "./js/smooth_scroll";
-import "./js/timer";
-import "./js/faq";
-import "./js/mob-menu";
+import "./js/refs.js";
+import "./js/smooth_scroll.js";
+import "./js/timer.js";
+import "./js/faq.js";
+import "./js/mob-menu.js";

@@ -7,7 +7,7 @@ import { openMenuBtn,
     linkFaqMob,
     aboutboutProjectSection,
     reviewsSection,
-    faqSection, } from "./refs";
+    faqSection, } from "./refs.js";
 
 openMenuBtn.addEventListener("click", toggleMobMenu);
 closeMenuBtn.addEventListener("click", toggleMobMenu);
